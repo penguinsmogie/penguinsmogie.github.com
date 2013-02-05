@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>3D Portfolio</title>
+<link href="css/style_portfolio.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+var unityObjectUrl = "http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js";
+if (document.location.protocol == 'https:')
+	unityObjectUrl = unityObjectUrl.replace("http://", "https://ssl-");
+document.write('<script type="text/javascript" src="' + unityObjectUrl + '"></script>');
+function play(){
+var u = new UnityObject2();
+u.initPlugin(jQuery("#content")[0], "portfolio/Golem_Wars.unity3d");
+}
+</script>
+</head>
+<style type="text/css">
+
+#content {
+	padding-top: 80px;
+}
+
+#content p {
+	font-size: 16px;
+
+}
+
+#pictures img {
+	width: 300px;
+}
+
+#content a {
+	font-size: 24px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgb(1,190,218);
+}
+
+#content a:visited {
+	color: rgb(1,190,218);
+}
+
+#content a:hover {
+	color: rgb(155,228,255);
+}
+
+</style>
+<body>
+<div id="topimage">
+	<div id="header">
+        <div class="column">
+        <a href="index.html">Drew Brown</a>
+        </div>
+            
+        <div class="column2">
+        <ul>
+        <li><a href="about.html">About</a></li>
+        <li>\\</li>
+        <li><a href="2D.html">2D</a></li>
+        <li>\\</li>
+        <li><span class="current">3D</span></li>
+        </ul>
+        </div>
+    
+    </div>
+</div>
+
+<div id="container">
+
+    <div id="content">
+    	<div class="missing">
+    		<a href="portfolio/Golem_Wars.unity3d" title="Unity Web Player. Install now!">
+			<img alt="Unity Web Player. Install now!" src="portfolio/steamy.png" width="193" height="63" />
+			</a>
+        </div>
+    </div>
+    
+</div>
+
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/lightbox.js"></script>
+<link href="css/lightbox.css" rel="stylesheet" />
+
+</body>
+</html>
