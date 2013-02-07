@@ -10,8 +10,6 @@ if (document.location.protocol == 'https:')
 	unityObjectUrl = unityObjectUrl.replace("http://", "https://ssl-");
 document.write('<script type="text/javascript" src="' + unityObjectUrl + '"></script>');
 
-var u = new UnityObject2();
-u.initPlugin(jQuery("#unityPlayer")[0], "portfolio/Golem_Wars.unity3d");
 </script>
 </head>
 <style type="text/css">
@@ -45,6 +43,8 @@ u.initPlugin(jQuery("#unityPlayer")[0], "portfolio/Golem_Wars.unity3d");
 
 </style>
 <body>
+<script type="text/javascript">var u = new UnityObject2();
+u.initPlugin(jQuery("#unityPlayer")[0], "portfolio/Golem_Wars.unity3d");</script>
 <div id="topimage">
 	<div id="header">
         <div class="column">
