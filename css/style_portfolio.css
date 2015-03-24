@@ -25,12 +25,12 @@ time, mark, audio, video {
 }
 
 body {
-	background-image: url(../images/DrewBrownPortfolioTemplate_03.jpg);
+	background-image: url(../images/DrewBrownPortfolioBackground.jpg);
 }
 
 #topimage {
 	height: 116px;
-	background-image: url(../images/DrewBrownPortfolioTemplate_02.jpg);
+	background-image: url(../images/DrewBrownPortfolioHeadImage.jpg);
 }
 
 #container {
