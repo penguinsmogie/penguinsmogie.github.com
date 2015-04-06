@@ -1,39 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>About</title>
+<title>3D Portfolio</title>
 <link href="css/style_portfolio.css" rel="stylesheet" type="text/css" />
 </head>
 <style type="text/css">
+p {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
 
 #content {
-	width: 500px;
-	padding-top: 40px;
-	padding-bottom: 20px;
+	padding-top: 60px;
 }
 
 #content p {
-	padding-bottom: 30px;
-	font-size: 14px;
+	font-size: 16px;
+
 }
 
-#content ol {
-	margin-left: 20px;
-	color: rgb(1,190,218);
-	padding-bottom: 20px;
+#pictures {
+	padding-top: 70px;
 }
 
-#content lh{
-	font-weight:bold;
-}
-
-#content li{
-	list-style: circle;
-	margin-left: 40px;
+#pictures img {
+	width: 300px;
 }
 
 #content a {
-	font-size: 24px;
+	font-size: 19px;
 	font-family: Arial, Helvetica, sans-serif;
 	color: rgb(1,190,218);
 }
@@ -46,6 +46,14 @@
 	color: rgb(155,228,255);
 }
 
+#headbit p {
+	font-size: 16px;
+}
+
+#headbit a {
+	font-size: 24px;
+}
+
 </style>
 <body>
 <div id="topimage">
@@ -55,14 +63,13 @@
         </div>
             
         <div class="column2">
-        	
-            <ul>
-                <li><a href="about.html">About</a></li>
-                <li>\\</li>
+        <ul>
                 <li><a href="programming.html">Programming</a></li>
                 <li>\\</li>
                 <li><a href="art.html">Art</a></li>
-            </ul>
+                <li>\\</li>
+				<li><a href="about.html">About</a></li>
+        </ul>
         </div>
     
     </div>
@@ -70,14 +77,28 @@
 
 <div id="container">
 
-    <div id="content">       
-       	<p><a href="calculator.html">Basic Calculator</a></p>
-	</div>
-    
+    <div id="content">
+		<div id="headbit">
+    	<p class="intro">Hey there!  My name's Drew Brown, and this is a showcase of applications I've created.  Please feel free to contact me at drew.brown375@gmail.com.  Thanks for looking!</p>
+		<br/>
+		<br/>
+		<p><a href="resume.pdf">Resume</a></p>
+		</div>
+		
+    	<div id="pictures">
+				<a href="calculator.html"><img src="images/calculator_splash.png" alt=""/></a>
+        </div>
     <div id="footer">
-    	<p>© Drew Brown		E-mail: drew.brown375@gmail.com</p>
+    <p>© Drew Brown		E-mail: drew.brown375@gmail.com</p>
     </div>
     
+    <br/>
+    
 </div>
+
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/lightbox.js"></script>
+<link href="css/lightbox.css" rel="stylesheet" />
+
 </body>
 </html>
