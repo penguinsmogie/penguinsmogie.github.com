@@ -5,11 +5,11 @@ document.getElementById("display").value=val;
 function append(val) {
 document.getElementById("display").value+=val;
 }
-function e()  { 
+function eq()  { 
 	try { 
 		set(eval(document.getElementById("display").value)) 
 	} 
-	catch(e) {
+	catch(eq) {
 		set('Error') 
 	} 
 }
