@@ -1,19 +1,15 @@
-function c(val)
-{
-document.getElementById("d").value=val;
+
+function set(val) {
+document.getElementById("display").value=val;
 }
-function v(val)
-{
-document.getElementById("d").value+=val;
+function append(val) {
+document.getElementById("display").value+=val;
 }
-function e() 
-{ 
-try 
-{ 
-  c(eval(document.getElementById("d").value)) 
-} 
-catch(e) 
-{
-  c('Error') 
-} 
-}  
+function e()  { 
+	try { 
+		set(eval(document.getElementById("display").value)) 
+	} 
+	catch(e) {
+		set('Error') 
+	} 
+}
