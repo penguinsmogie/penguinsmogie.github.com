@@ -25,6 +25,7 @@ function getDisplayTime(currentTime) {
 }
 
 $(document).ready(function() {
+  $("#clearWatch").prop("disabled", true);
   $("#startWatch").click(function() {
     if(!tickyClock) {
       if(!startDate) {
@@ -40,6 +41,7 @@ $(document).ready(function() {
       tickyClock = window.setInterval(updateWatch, 100);
     }
     $(this).prop("disabled", true);
+	$("#clearWatch").prop("disabled", true);
   });
   
   $("#stopWatch").click(function() {
@@ -47,12 +49,16 @@ $(document).ready(function() {
     pauseDate = Date.now();
     tickyClock = false;
     $("#startWatch").prop("disabled", false);
+	$("#clearWatch").prop("disabled", false);
   });
   
   $("#clearWatch").click(function() {
+  if(!tickyClock) {
     currentTime = 0;
     startDate = 0;
     resumeDiff = 0;
     $("#watchFace").html(getDisplayTime(currentTime));
+	$("#clearWatch").prop("disabled", true);
+	}
   });
 });

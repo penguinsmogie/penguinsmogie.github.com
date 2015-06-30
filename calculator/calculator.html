@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Javascript Calculator</title>
+	<link href="../css/style_portfolio.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="calculator.js"></script>
+	
+</head>
+<style>
+.box {
+	background-color: #3d4543;
+	z-index: 1;
+	height: 350px;
+	width: 250px;
+	border-radius: 10px;
+	position: relative;
+	top: 80px;
+	left: 50%;
+	margin-left: -125px;
+	border-style: solid;
+	border-color: tan;
+	border-width: 16px;
+} 
+
+.display {
+	background-color:#222;
+	width:213px;
+	position:relative;
+	left:15px;
+	top:20px;
+	height:40px;
+}
+
+
+.display input {
+	position:relative;
+	left:2px;
+	top:2px;
+	height:35px;
+	color:black;
+	background-color:#B4D0DC;
+	font-size:21px;
+	text-align:right;
+} 
+
+.keys {
+	position:relative;
+	top:25px;
+}
+
+.button {
+	width:45px;
+	height:35px;
+	border:none;
+	border-radius:8px;
+	margin-left:12px;
+	margin-bottom:3px;
+	cursor:pointer;
+	border-top:2px solid transparent;
+}
+
+
+.button.gray {
+	color:white;
+	background-color:#6f6f6f;
+	border-bottom:black 2px solid;
+	border-top:2px #6f6f6f solid;
+}
+
+.button.pink {
+	color:black;
+	background-color:#ff4561;
+	border-bottom:black 2px solid;
+	border-top:2px #ff4561 solid;
+}
+
+.button.blue {
+	color:white;
+	background-color:#89a5b1;
+	border-bottom:black 2px solid;
+	border-top:2px #89a5b1 solid;
+}
+
+.button.orange {
+	color:black;
+	background-color:#FF9933;
+	border-bottom:black 2px solid;
+	border-top:2px #FF9933 solid;
+}
+
+
+.gray:active {
+	border-top:black 2px solid;
+	border-bottom:2px #6f6f6f solid;
+}
+
+.pink:active {
+	border-top:black 2px solid;
+	border-bottom:#ff4561 2px solid;
+}
+
+.blue:active {
+	border-top:black 2px solid;
+	border-bottom:#80afc4 2px solid;
+}
+
+.orange:active {
+	border-top:black 2px solid;
+	border-bottom:FF9933 2px solid;
+}
+</style>	
+
+<body>
+	<div id="topimage">
+		<div id="header">
+			<div class="column">
+				<a href="index.html">Drew Brown</a>
+			</div>
+			<div class="column2">
+			<ul>
+                <li><a href="../programming.html">Programming</a></li>
+                <li>\\</li>
+                <li><a href="../art.html">Art</a></li>
+                <li>\\</li>
+				<li><a href="../about.html">About</a></li>
+			</ul>
+			</div>
+		</div>
+	</div>
+	<div class="box">
+		<div class="display"><input type="text" readonly size="19" id="display"></div>
+		<div class="keys">
+			<p>
+			<input type="button" class="button gray" value="mrc" onclick='set("Created            ")'>
+			<input type="button" class="button gray" value="m-" onclick='set("by                ")'>
+			<input type="button" class="button gray" value="m+" onclick='set("Penguinsmogie     ")'>
+			<input type="button" class="button pink" value="/" onclick='append("/")'></p>
+			<p>
+			<input type="button" class="button blue" value="7" onclick='append("7")'>
+			<input type="button" class="button blue" value="8" onclick='append("8")'>
+			<input type="button" class="button blue" value="9" onclick='append("9")'>
+			<input type="button" class="button pink" value="*" onclick='append("*")'></p>
+			<p>
+			<input type="button" class="button blue" value="4" onclick='append("4")'>
+			<input type="button" class="button blue" value="5" onclick='append("5")'>
+			<input type="button" class="button blue" value="6" onclick='append("6")'>
+			<input type="button" class="button pink" value="-" onclick='append("-")'></p>
+			<p>
+			<input type="button" class="button blue" value="1" onclick='append("1")'>
+			<input type="button" class="button blue" value="2" onclick='append("2")'>
+			<input type="button" class="button blue" value="3" onclick='append("3")'>
+			<input type="button" class="button pink" value="+" onclick='append("+")'></p>
+			<p>
+			<input type="button" class="button blue" value="0" onclick='append("0")'>
+			<input type="button" class="button blue" value="." onclick='append(".")'>
+			<input type="button" class="button orange" value="C" onclick='set("")'>
+			<input type="button" class="button orange" value="=" onclick='eq()'></p>
+		</div>
+	</div>
+</body>
+</html>
