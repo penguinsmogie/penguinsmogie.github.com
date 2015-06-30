@@ -1,4 +1,4 @@
-
+set("display")=0
 function set(val) {
 document.getElementById("display").value=val;
 }

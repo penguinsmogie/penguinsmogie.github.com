@@ -4,37 +4,38 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Javascript Stopwatch</title>
 	<link href="../css/style_portfolio.css" rel="stylesheet" type="text/css" />
-	<script type="text/javascript" src="calculator.js"></script>
 </head>
 <style>
 #box {
 	background-color: #FFFFFF;
-	height: 150px;
-	width: 450px;
-	border-radius: 10px;
+	height: 250px;
+	width: 300px;
+	border-radius: 60px;
 	position: relative;
-	top: 80px;
-	left: 50%;
-	margin-left: -225px;
+	top: 100px;
+	margin-left: auto;
+	margin-right: auto;
 	border-style: solid;
-	border-color: tan;
-	border-width: 16px;
+	border-color: #E9C36B;
+	border-width: 6px;
 }
 
-#buttons {
-
-}
-
-.stopwatchTitle {
-	text-align: center;
-	padding-bottom: 0px;
-	font-family: sans-serif;
+#box button {
+	width: 75px;
+	height: 55px;
+	border: none;
+	border-radius: 8px;
+	margin-left: 16px;
+	margin-bottom: 3px;
+	cursor: pointer;
+	font-size: 18px;
 }
 	
 #watchFace {
 	text-align: center;
-	font-size: 24px;
+	font-size: 44px;
 	font-family: sans-serif;
+	padding-top: 5px;
 }
 </style>
 
@@ -57,8 +58,7 @@
 		</div>
 
 		<div id="box">
-			<p class="stopwatchTitle">StopWatch project</p>
-			<p><span id="watchFace">0.0</span></p>
+			<p id="watchFace">0.0</p>
 			<div id="buttons">
 				<button id="startWatch">Start</button>
 				<button id="stopWatch">Stop</button>
