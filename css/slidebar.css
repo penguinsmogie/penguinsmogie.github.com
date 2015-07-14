@@ -8,7 +8,7 @@ body {
 
 /* Initial menu */
 .menu {
-  background: #202024 url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png') repeat left top;
+background: #202024 url('../images/slidebar_background.png') repeat left top;
   left: -285px;  /* start off behind the scenes */
   height: 100%;
   position: fixed;
@@ -26,14 +26,14 @@ body {
 }
 
 .menu ul {
-  border-top: 1px solid #636366;
+  border-top: 1px solid rgb(1,190,218);
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .menu li {
-  border-bottom: 1px solid #636366;
+  border-bottom: 1px solid rgb(1,190,218);
   font-family: 'Open Sans', sans-serif;
   line-height: 45px;
   padding-bottom: 3px;
