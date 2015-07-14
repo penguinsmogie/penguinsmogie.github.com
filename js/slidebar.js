@@ -1,17 +1,17 @@
+var toggle = true;
 var main = function() {
 	/* Push the body and the nav over by 285px over */
-	var toggle = false;
 	$('.icon-menu').click(function() {
-		if toggle = false (
+		if toggle = true (
 		  $('.menu').animate({
 			left: "0px"
 		  }, 200);
 		  $('body').animate({
 			left: "285px"
 		  }, 200);
-		  toggle = true;
+		  toggle = false;
 		)
-		else if toggle = true (
+		else (
 		  $('.menu').animate({
 			left: "-285px"
 		  }, 200);
@@ -19,9 +19,8 @@ var main = function() {
 		  $('body').animate({
 			left: "0px"
 		  }, 200);
-		  toggle = false;
 		)
-	});
+		});
 		  
 
   /* Then push them back */
@@ -33,7 +32,6 @@ var main = function() {
     $('body').animate({
       left: "0px"
     }, 200);
-	toggle = false;
   });
 };
 
