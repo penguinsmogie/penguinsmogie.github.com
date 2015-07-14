@@ -4,6 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Drew Brown's Portfolio</title>
 <link href="css/style_portfolio.css" rel="stylesheet" type="text/css" />
+<link href="css/slidebar.css" rel="stylesheet" type="text/css" />
 </head>
 <style type="text/css">
 p {
@@ -51,45 +52,69 @@ p {
 </style>
 
 <body>
-
-<div id="topimage">
-	<div id="header">
-        <div class="column">
-        <a href="index.html">Drew Brown</a>
-        </div>
-            
-        <div class="column2">
-        	<ul>
-                <li><a href="programming.html">Programming</a></li>
-                <li>\\</li>
-                <li><a href="art.html">Art</a></li>
-                <li>\\</li>
-				<li><a href="about.html">About</a></li>
-				<li>\\</li>
-				<li><a href="resume.pdf">Resume</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-
+	<div id="topimage">
+		<div id="header">
+			<div class="column">
+			<a href="index.html">Drew Brown</a>
+			</div>
+				
+			<div class="column2">
+				<ul>
+					<li><a href="programming.html">Programming</a></li>
+					<li>\\</li>
+					<li><a href="art.html">Art</a></li>
+					<li>\\</li>
+					<li><a href="about.html">About</a></li>
+					<li>\\</li>
+					<li><a href="resume.pdf">Resume</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 
 
-<div id="container">
 
-  <div id="home">
-  <p></p>
-    <a href="programming.html"><img src="images/calculator_splash.png" /></a>
-    <a href="art.html"><img src="portfolio/UV_Scroll.gif" /></a>
-    <ul>
-    	<li>Programming</li>
-        <li>Art</li>
-    </ul>
-  </div>
-  
-      <div id="footer">
-    <p>© Drew Brown		E-mail: drew.brown375@gmail.com</p>
-    </div>
-    
-</div>
+	<div id="container">
+		<div class="menu">
+		  
+		<!-- Menu icon -->
+		<div class="icon-close">
+			<img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/close.png">
+		</div>
+
+		<!-- Menu -->
+		<ul>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">Help</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+		</div>
+
+		<!-- Main body -->
+		<div class="jumbotron">
+
+		  <div class="icon-menu">
+			<i class="fa fa-bars"></i>
+			Menu
+		  </div>
+		</div>
+
+		<div id="home">
+		<p></p>
+			<a href="programming.html"><img src="images/calculator_splash.png" /></a>
+			<a href="art.html"><img src="portfolio/UV_Scroll.gif" /></a>
+			<ul>
+				<li>Programming</li>
+				<li>Art</li>
+			</ul>
+		</div>
+	  
+		  <div id="footer">
+		<p>© Drew Brown		E-mail: drew.brown375@gmail.com</p>
+		</div>
+	</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/slidebar.js"></script>
 </body>
 </html>
