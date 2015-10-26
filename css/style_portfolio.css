@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-#backgroundimage {
+body {
 	background-image: url(../images/DrewBrownPortfolioBackground.jpg);
 }
 
